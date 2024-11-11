@@ -1,0 +1,71 @@
+.g-header-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: var(--size-s);
+}
+
+.g-header-item {
+  text-decoration: none;
+  color: var(--primary);
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.8s ease;
+}
+.g-header-item.active {
+  border-bottom: 1px solid var(--primary);
+}
+
+/* Hide the burger button on larger screens */
+.burger-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Fullscreen Menu Styles */
+.fullscreen-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1000;
+  background-color: white;
+  padding: var(--size-s);
+}
+
+.fullscreen-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fullscreen-menu a {
+  text-decoration: none;
+}
+
+.close-menu-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .g-header-list {
+    display: none; /* Hide the navigation links */
+  }
+
+  .burger-menu-button {
+    display: block; /* Show the burger menu button */
+  }
+}

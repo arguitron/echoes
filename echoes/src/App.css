@@ -1,0 +1,56 @@
+:root {
+  --green-200: #2d4e3b;
+  --green-100: #a8bdb7;
+  --yellow-100: #d9d2c3;
+  --yellow-200: #eadaa6;
+  --font-base: 'Roboto', sans-serif;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.echoes.default-theme {
+  /** FONT **/
+  font-family: var(--font-base);
+
+  /** COLORS **/
+  /* GENERAL */
+  --primary: var(--green-200);
+  --secondary: var(--green-100);
+  --accent: var(--yellow-100);
+  --highlight: var(--yellow-200);
+
+  /* INFORMATION */
+  --success: #26efef;
+  --success-saturated: #00af54;
+  --failure: #ef2686;
+  --warning-100: #f79824;
+  --warning-100-20: #f7982433;
+
+  /** TEXT SIZES **/
+  --text-size-xs: 0.6em;
+  --text-size-s: 0.8em;
+  --text-size-m: 1em;
+  --text-size-l: 1.8em;
+  --text-size-xl: 2.4em;
+  --text-header: 13px;
+  --text-label: 12px;
+
+  /** SPACINGS **/
+  --max-width: 1500px;
+  --size-xs: 4px;
+  --size-s: 10px;
+  --size-m: 20px;
+  --size-l: 40px;
+  --size-xl: 80px;
+
+  /** RADIUS **/
+  --radius-s: 8px;
+  --radius-m: 16px;
+  --radius-l: 32px;
+}
